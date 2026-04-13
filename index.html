@@ -31,7 +31,48 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
+    <nav class="navbar border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <!-- Logo + Name -->
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow">
+                    DM
+                </div>
+                <div>
+                    <h1 class="heading-font text-2xl tracking-tight text-slate-900">Dave Marc Amacio</h1>
+                    <p class="text-blue-600 text-xs font-medium -mt-1">IT Specialist • Aspiring Cybersecurity Analyst</p>
+                </div>
+            </div>
 
+            <!-- Menu Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+                <a href="#education" class="hover:text-blue-600 transition-colors">Education</a>
+            </div>
+
+            <!-- Right Side Buttons -->
+            <div class="flex items-center gap-4">
+                <a href="https://linkedin.com/in/davemarcamacio" target="_blank" 
+                   class="flex items-center gap-2 text-blue-600 hover:text-blue-700">
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
+                
+                <button onclick="downloadResume()" 
+                        class="px-6 py-2.5 border border-blue-600 text-blue-600 hover:bg-blue-50 rounded-3xl text-sm font-medium flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Resume</span>
+                </button>
+                
+                <button onclick="showCoverLetter()" 
+                        class="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-3xl text-sm font-medium">
+                    Cover Letter
+                </button>
+            </div>
+        </div>
+    </nav>
     <!-- SCROLL SNAP CONTAINER -->
     <div class="snap-container">
 
